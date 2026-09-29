@@ -1,0 +1,48 @@
+# 1. BMI (Body Mass Index) Calculator
+# BMI = weight in kg / height in metres squared
+weight = float(input("Enter weight (kg): "))
+height = float(input("Enter height (m): "))
+bmi = weight / (height ** 2)
+print("BMI =", round(bmi, 2))
+if bmi <= 18.4:
+    print("Underweight")
+elif bmi <= 24.9:
+    print("Normal")
+elif bmi <= 39.9:
+    print("Overweight")
+else:
+    print("Obese")
+
+
+# 2. Toy Vendor Discount Calculator
+# Product code: 1 = Battery Based, 2 = Key-based, 3 = Electrical Charging Based
+
+code = int(input("Enter product code (1/2/3): "))
+amount = float(input("Enter order amount: "))
+if code == 1:
+    if amount > 1000:
+        amount = amount - (amount * 10 / 100)
+elif code == 2:
+    if amount > 100:
+        amount = amount - (amount * 5 / 100)
+elif code == 3:
+    if amount > 500:
+        amount = amount - (amount * 10 / 100)
+else:
+    print("Invalid product code")
+
+print("Net Amount =", amount)
+
+# 3. FizzBuzz
+# Print Fizz for multiples of 3, Buzz for multiples of 5,
+# and FizzBuzz for multiples of both 3 and 5.
+
+for i in range(1, 101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)

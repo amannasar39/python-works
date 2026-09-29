@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+.venv/
+ENV/
+env/
+
+# IDE & Editors
+.vscode/
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables & local db
+.env
+*.sqlite3
+
+# Subproject tracked in separate repository (streamlit-works)
+streamlit/
